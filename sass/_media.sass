@@ -1,0 +1,419 @@
+@media (max-width: 1200px )
+    .menu
+        &_item
+            padding-right: 21px
+        &_link
+            font-size: 13px
+            text-decoration: none
+    .promo
+        &_header
+            font-size: 50px
+    .advantages
+        &_item
+            align-items: flex-start
+        &_text
+            width: 303px
+    .mobile
+        .row
+            justify-content: space-between
+        &_item
+            width: 289px
+            margin-bottom: 30px
+            &_subtitle
+                font-size: 23px
+                padding: 0 15px
+    .car
+        padding-bottom: 129px
+    .require
+        padding-top: 56px
+    .footer
+        &_wrapper
+            padding: 33px 13px 31px 13px
+        &_nav
+            width: 312px
+            &_second
+                font-size: 10px
+
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 10px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 21px
+            height: 41px
+            width: 100%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 29px
+    .advantages
+        &_item
+            flex-direction: column
+            align-items: center
+        &_text
+            width: 303px
+            margin-top: 19px
+        &_round
+            margin-right: 0
+    .mobile
+        &_item
+            width: 210px
+            height: 249px
+            margin-bottom: 28px
+            padding-top: 74px
+            &_subtitle
+                padding: 0 15px
+                font-size: 18px
+                line-height: 27px
+    .car
+        min-height: 830px
+        padding-bottom: 120px
+        &_img
+            height: 393px
+            width: 603px
+    .require
+        padding-bottom: 63px
+        &_list
+            padding-left: 40px
+            li
+                padding-right: 30px
+                font-size: 16px
+                line-height: 23px
+        &_block
+            margin: 36px 0 3px 0
+    .footer
+        &_wrapper
+            padding: 33px 19px 31px 19px
+        &_nav
+            display: flex
+            justify-content: space-between
+            width: 246px
+            &_top
+                font-size: 10px
+                flex-direction: column
+            &_second
+                font-size: 9px
+                flex-direction: column
+            &_lang
+                display: flex
+                align-items: center
+                margin: 0
+                font-size: 9px
+        &_appset
+            display: flex
+            justify-content: flex-end
+            a
+                margin-right: 3px
+                &:last-child
+                    margin-right: 0
+                img
+                    width: 66px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        margin: 0
+        background-color: rgba(0, 0, 0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin-top: 10px
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 15px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 3px
+            transition: 0.7s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-225deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(225deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            color: $text_color
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            font-size: 40px
+    .mobile
+        padding-bottom: 32px
+        &_item
+            width: 51%
+    .car
+        min-height: 749px
+        padding-bottom: 110px
+        background: none
+        background-color: #070716
+        &_img
+            height: 316px
+            width: 497px
+        .title_negative
+            font-size: 37px
+        &_bottom_text
+            color: $text_color
+    .world
+        &_look
+            margin-top: 499px
+    footer
+        padding-top: 24px
+    .footer
+        &_wrapper
+            flex-direction: column
+            align-content: center
+            padding: 22px 19px 20px 19px
+        &_wrapper > div
+            width: 100%
+        &_media
+            margin: 20px auto 0 auto
+        &_nav
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 299px
+            &_top
+                font-size: 14px
+                flex-direction: row
+            &_second
+                font-size: 9px
+                flex-direction: row
+                flex-wrap: wrap
+            &_lang
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-top: 9px
+                font-size: 9px
+        &_appset
+            justify-content: center
+            margin: 20px auto 0 auto
+            a
+                margin-right: 4px
+                &:last-child
+                    margin-right: 0
+                img
+                    width: 94px
+    .sass
+        &_order
+            &_media
+                order: 1
+            &_nav
+                order: 0
+            &_appset
+                order: 2
+
+@media (max-width: 575px)
+    nav
+        height: 30px
+    .subheader
+        height: 60px
+        &_official
+            display: none
+        &_logo
+            margin-top: 17px
+        &_phone
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+
+    .promo
+        min-height: 400px
+        padding: 105px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 px
+            line-height: 36px
+        &_subheader
+            margin-top: 13px
+            padding: 10px 26px
+            font-size: 20px
+            line-height: 28px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 58px
+            font-size: 16px
+    .menu
+        width: 85%
+        &_item
+            width: 100%
+            padding: 12px 0
+            text-align: center
+        &_link
+            display: block
+    .advantages
+        min-height: 2323px
+        padding: 22px 0 6px 0
+        .title
+            font-size: 15px
+            margin-top: 14px
+            line-height: 16px
+        &_item
+            margin-top: 21px
+        &_round
+            width: 100px
+            height: 100px
+        &_text
+            width: 100%
+            margin-top: 26px
+            &_header
+                font-size: 16px
+    .mobile
+        min-height: 1884px
+        padding: 22px 0 12px 0
+        .title
+            margin-top: 14px
+            font-size: 16px
+            line-height: 16px
+        .subtitle
+            margin-top: 9px
+            padding: 0 9px
+            font-size: 14px
+            line-height: 21px
+        &_item
+            margin-bottom: 30px
+            width: 290px
+            height: 254px
+    .car
+        min-height: 393px
+        padding: 22px 0 35px 0
+        .title_negative
+            display: none
+        .subtitle_negative
+            display: none
+        &_img
+            height: 190px
+            width: 290px
+            margin-top: 34px
+        &_bottom_text
+            margin-top: 23px
+            padding: 0 35px
+    .require
+        min-height: 1047px
+        padding: 22px 0 20px 0
+        .title
+            margin-top: 14px
+            font-size: 16px
+            line-height: 18px
+        &_block
+            margin: 22px 0 10px 0
+        &_title
+            font-size: 16px
+            line-height: 18px
+        &_list
+            margin: 12px 0 0 0
+            padding-left: 33px
+            li
+                margin-bottom: 9px
+                padding-right: 0
+                font-size: 14px
+                line-height: 18px
+        &_descr
+            font-size: 14px
+            line-height: 16px
+    .world
+        min-height: 360px
+        padding: 22px 0 20px 0
+        .title_negative
+            margin-top: 15px
+            font-size: 16px
+            line-height: 18px
+        .subtitle_negative
+            margin-top: 8px
+            font-size: 14px
+            line-height: 15px
+        &_look
+            margin-top: 216px
+            font-size: 14px
+            line-height: 15px
+
+// For hover
+@media (max-width: 991px)
+    .menu_link:hover
+        color: $text_color
+    .subheader
+        &_phone:hover
+            color: $text_color
+        &_btn:hover
+            color: $text_color
+            background-image: linear-gradient(to top, $design_btn_color1 0%, $design_btn_color2 100%)
+    .promo_btn:hover
+        color: $text_color
+        background-image: linear-gradient(to top, $design_btn_color1 0%, $design_btn_color2 100%)
+    .mobile_item_plus:hover
+        &::before, &::after
+            background-color: $design_color
+    .world_look
+        a:hover
+            color: #1fbad6
+    .footer_nav
+        &_top
+            a:hover
+                color: #070716
+                text-shadow: none
+        &_second
+            a:hover
+                color: #999999
+                text-shadow: none
+        &_lang
+            color: #1fbad6
